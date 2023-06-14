@@ -8,3 +8,4 @@
 
    <h4>Backend = Back-end</h4>
    <h4>Booking = Front-end</h4>
+   <h4>mydb.sql = DataBase</h4>
