@@ -1,0 +1,9 @@
+POST  http://localhost:3000/list
+Content-Type: application/json
+
+{
+    "name": "ห้องประชุม BKD VIVA",
+    "detail": "จอสมาร์ททีวี, ไมโครโฟน + เครื่องเสียงห้องประชุม",
+    "build": "อาคาร 1 คูหา / ห้องประชุมอยู่ ชั้น 3",
+    "seat": 8
+}
