@@ -12,3 +12,4 @@
 <h2>START</h2>
 <h5>cd booking -> npm run dev (if error try npm i vite)</h5>
 <h5>cd backend -> node app.js </h5>
+<h5>import mydb.sql in mysql </h5>
