@@ -24,7 +24,7 @@ app.use(setUser)
 
 
 app.get('/bookingtoday', (req, res) => {
-  connection.query('SELECT COUNT(id) AS count FROM bookingroom WHERE DATE(begin) <= CURDATE() AND DATE(end) >= CURDATE();', (err, result) => {
+  connection.query('SELECT COUNT(id) AS count FROM bookingroom WHERE DATE(begin) <= CURDATE() AND DATE(end) >= CURDATE() AND bookingroom.status_id = 0;', (err, result) => {
       if (err) {
           console.log(err);
           res.status(500).json({ error: err });
