@@ -9,14 +9,10 @@ const saltRounds = 10
 const jwt = require('jsonwebtoken');
 const verifyToken = require('./middleware/auth')
 const secret = 'BackLogin'
-
+require('dotenv').config()
 
 const mysql = require('mysql2');
-const connection = mysql.createConnection({
-    host:'localhost',
-    user:'root',
-    database:'mydb'
-})
+const connection = mysql.createConnection(process.env.DATABASE_URL)
 
 app.use(cors())
 app.use(express.json())
