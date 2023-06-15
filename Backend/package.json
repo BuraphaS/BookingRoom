@@ -1,7 +1,5 @@
 {
-  "scripts": {
-    "start": "node app.js"
- },
+  
   "dependencies": {
   
     
